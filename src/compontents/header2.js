@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-primary fixed w-100">
+    <header className="bg-dark fixed w-100">
       <div className="headerdiv">
         <button onClick={toggleCart} className="cart btn btn-warning">
           🛒 <span className="d-none d-sm-inline">Cart</span> 

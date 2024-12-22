@@ -4,7 +4,7 @@ import Products from "./products.js";
 function Home() {
   return (
     <>
-      <div className="bg-primary rounded">
+      <div className="bg-dark rounded">
         <h1 className="fw-bold text-white p-4">Welcome to the Store</h1>
         <p className="text-white p-4">In this store we have many different things</p>
       </div>

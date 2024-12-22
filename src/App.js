@@ -6,6 +6,7 @@ import About from "./compontents/about.js";
 import Contact from "./compontents/contact.js";
 import ProductDetail from "./compontents/productDetails.js";
 import { CartProvider } from "./CartContext.js";
+import Footer from "./compontents/footer.js";
 import './App.css';
 
 
@@ -14,7 +15,7 @@ function App() {
     <CartProvider>
     <Router>
       <Header />
-      <main className="mt-5 container">
+      <main className="my-5 container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail/>}/>
         </Routes>
       </main>
+      <Footer/>
     </Router>
     </CartProvider>
   );
