@@ -30,8 +30,8 @@ const Footer = () => {
             <h5>Contact</h5>
             <ul className="list-unstyled">
               <li>Email: <a href="mailto:info@thestore.com" className="text-white text-decoration-none">info@thestore.com</a></li>
-              <li>Phone: +123 456 789</li>
-              <li>Address: 123 Store Street, City, Country</li>
+              <li>Phone: +47 456 78 901</li>
+              <li>Address: Rarskenlundvegen 16, Porsgrunn, Norway</li>
             </ul>
           </div>
         </div>

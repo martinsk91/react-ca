@@ -8,23 +8,24 @@ import ProductDetail from "./compontents/productDetails.js";
 import { CartProvider } from "./CartContext.js";
 import Footer from "./compontents/footer.js";
 import './App.css';
-
+import CheckoutSuccess from "./compontents/checkoutSucess.js";
 
 function App() {
   return (
     <CartProvider>
-    <Router>
-      <Header />
-      <main className="my-5 container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/product/:id" element={<ProductDetail/>}/>
-        </Routes>
-      </main>
-      <Footer/>
-    </Router>
+      <Router>
+        <Header />
+        <main className="my-5 container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/checkoutsuccess" element={<CheckoutSuccess />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </CartProvider>
   );
 }
